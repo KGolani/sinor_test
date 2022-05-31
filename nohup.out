@@ -1,0 +1,877 @@
+[2022-05-13 09:23:22 +0000] [24431] [INFO] Starting gunicorn 20.1.0
+[2022-05-13 09:23:22 +0000] [24431] [INFO] Listening at: http://0.0.0.0:8000 (24431)
+[2022-05-13 09:23:22 +0000] [24431] [INFO] Using worker: sync
+[2022-05-13 09:23:22 +0000] [24432] [INFO] Booting worker with pid: 24432
+[2022-05-13 09:23:22 +0000] [24432] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/importlib/__init__.py", line 122, in import_module
+    raise TypeError(msg.format(name))
+TypeError: the 'package' argument is required to perform a relative import for '.wsgi'
+[2022-05-13 09:23:22 +0000] [24432] [INFO] Worker exiting (pid: 24432)
+[2022-05-13 09:23:22 +0000] [24431] [INFO] Shutting down: Master
+[2022-05-13 09:23:22 +0000] [24431] [INFO] Reason: Worker failed to boot.
+[2022-05-13 09:23:39 +0000] [24436] [INFO] Starting gunicorn 20.1.0
+[2022-05-13 09:23:39 +0000] [24436] [INFO] Listening at: http://0.0.0.0:8000 (24436)
+[2022-05-13 09:23:39 +0000] [24436] [INFO] Using worker: sync
+[2022-05-13 09:23:39 +0000] [24437] [INFO] Booting worker with pid: 24437
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+[2022-05-13 12:33:15 +0000] [24436] [CRITICAL] WORKER TIMEOUT (pid:24437)
+[2022-05-13 21:33:15 +0900] [24437] [INFO] Worker exiting (pid: 24437)
+[2022-05-13 12:33:15 +0000] [24990] [INFO] Booting worker with pid: 24990
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /favicon.ico
+Not Found: //.well-known/security.txt
+Not Found: //robots.txt
+Not Found: //sitemap.xml
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /favicon.ico
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /nice ports,/Trinity.txt.bak
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /Portal0000.htm
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 109, in post
+    data = json.loads(request.body)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Not Found: /Portal/Portal.mwsl
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /functionRouter
+Not Found: /sdk
+Not Found: /nmaplowercheck1652557550
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /.git/HEAD
+Not Found: /localstart.php
+Not Found: /CSS/Miniweb.css
+Not Found: /__Additional
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /server-status
+Not Found: /docs/cplugError.html/
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /tomcatwar.jsp
+Method Not Allowed (HEAD): /
+Method Not Allowed: /
+Not Found: /HNAP1
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /../../../mnt/mtd/Config/Account1
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+[2022-05-16 02:28:58 +0000] [24436] [INFO] Handling signal: term
+[2022-05-16 11:28:58 +0900] [24990] [INFO] Worker exiting (pid: 24990)
+[2022-05-16 02:28:59 +0000] [24436] [INFO] Shutting down: Master
+[2022-05-16 02:30:06 +0000] [6151] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 02:30:06 +0000] [6151] [INFO] Listening at: http://0.0.0.0:8000 (6151)
+[2022-05-16 02:30:06 +0000] [6151] [INFO] Using worker: sync
+[2022-05-16 02:30:06 +0000] [6152] [INFO] Booting worker with pid: 6152
+[2022-05-16 02:30:06 +0000] [6152] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'Swever_main'
+[2022-05-16 02:30:06 +0000] [6152] [INFO] Worker exiting (pid: 6152)
+[2022-05-16 02:30:06 +0000] [6151] [INFO] Shutting down: Master
+[2022-05-16 02:30:06 +0000] [6151] [INFO] Reason: Worker failed to boot.
+[2022-05-16 02:30:16 +0000] [6155] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 02:30:16 +0000] [6155] [INFO] Listening at: http://0.0.0.0:8000 (6155)
+[2022-05-16 02:30:16 +0000] [6155] [INFO] Using worker: sync
+[2022-05-16 02:30:16 +0000] [6156] [INFO] Booting worker with pid: 6156
+[2022-05-16 02:30:16 +0000] [6156] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'Swever_main'
+[2022-05-16 02:30:16 +0000] [6156] [INFO] Worker exiting (pid: 6156)
+[2022-05-16 02:30:16 +0000] [6155] [INFO] Shutting down: Master
+[2022-05-16 02:30:16 +0000] [6155] [INFO] Reason: Worker failed to boot.
+[2022-05-16 02:34:03 +0000] [6270] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 02:34:03 +0000] [6270] [INFO] Listening at: http://0.0.0.0:8000 (6270)
+[2022-05-16 02:34:03 +0000] [6270] [INFO] Using worker: sync
+[2022-05-16 02:34:03 +0000] [6271] [INFO] Booting worker with pid: 6271
+[2022-05-16 02:34:03 +0000] [6271] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'Server_main'
+[2022-05-16 02:34:03 +0000] [6271] [INFO] Worker exiting (pid: 6271)
+[2022-05-16 02:34:03 +0000] [6270] [INFO] Shutting down: Master
+[2022-05-16 02:34:03 +0000] [6270] [INFO] Reason: Worker failed to boot.
+[2022-05-16 02:34:09 +0000] [6275] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 02:34:09 +0000] [6275] [INFO] Listening at: http://0.0.0.0:8000 (6275)
+[2022-05-16 02:34:09 +0000] [6275] [INFO] Using worker: sync
+[2022-05-16 02:34:09 +0000] [6276] [INFO] Booting worker with pid: 6276
+[2022-05-16 02:34:09 +0000] [6276] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'Server_main'
+[2022-05-16 02:34:09 +0000] [6276] [INFO] Worker exiting (pid: 6276)
+[2022-05-16 02:34:09 +0000] [6275] [INFO] Shutting down: Master
+[2022-05-16 02:34:09 +0000] [6275] [INFO] Reason: Worker failed to boot.
+[2022-05-16 02:34:18 +0000] [6279] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 02:34:18 +0000] [6279] [INFO] Listening at: http://0.0.0.0:8000 (6279)
+[2022-05-16 02:34:18 +0000] [6279] [INFO] Using worker: sync
+[2022-05-16 02:34:18 +0000] [6280] [INFO] Booting worker with pid: 6280
+[2022-05-16 02:34:18 +0000] [6280] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'Server_main'
+[2022-05-16 02:34:18 +0000] [6280] [INFO] Worker exiting (pid: 6280)
+[2022-05-16 02:34:18 +0000] [6279] [INFO] Shutting down: Master
+[2022-05-16 02:34:18 +0000] [6279] [INFO] Reason: Worker failed to boot.
+[2022-05-16 02:35:48 +0000] [6286] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 02:35:48 +0000] [6286] [INFO] Listening at: http://0.0.0.0:8000 (6286)
+[2022-05-16 02:35:48 +0000] [6286] [INFO] Using worker: sync
+[2022-05-16 02:35:48 +0000] [6287] [INFO] Booting worker with pid: 6287
+[2022-05-16 07:15:40 +0000] [6286] [INFO] Handling signal: term
+[2022-05-16 16:15:40 +0900] [6287] [INFO] Worker exiting (pid: 6287)
+[2022-05-16 07:15:40 +0000] [6286] [WARNING] Worker with pid 6287 was terminated due to signal 15
+[2022-05-16 07:15:40 +0000] [6286] [INFO] Shutting down: Master
+[2022-05-16 07:25:24 +0000] [1343] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 07:25:24 +0000] [1343] [INFO] Listening at: http://0.0.0.0:8000 (1343)
+[2022-05-16 07:25:24 +0000] [1343] [INFO] Using worker: sync
+[2022-05-16 07:25:24 +0000] [1344] [INFO] Booting worker with pid: 1344
+[2022-05-16 07:50:57 +0000] [1343] [INFO] Handling signal: term
+[2022-05-16 16:50:57 +0900] [1344] [INFO] Worker exiting (pid: 1344)
+[2022-05-16 07:50:58 +0000] [1343] [INFO] Shutting down: Master
+[2022-05-16 07:52:20 +0000] [1579] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 07:52:20 +0000] [1579] [INFO] Listening at: http://0.0.0.0:8000 (1579)
+[2022-05-16 07:52:20 +0000] [1579] [INFO] Using worker: sync
+[2022-05-16 07:52:20 +0000] [1580] [INFO] Booting worker with pid: 1580
+[2022-05-16 07:52:41 +0000] [1579] [INFO] Handling signal: term
+[2022-05-16 16:52:41 +0900] [1580] [INFO] Worker exiting (pid: 1580)
+[2022-05-16 07:52:41 +0000] [1579] [INFO] Shutting down: Master
+[2022-05-16 07:53:24 +0000] [1595] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 07:53:24 +0000] [1595] [INFO] Listening at: http://0.0.0.0:8000 (1595)
+[2022-05-16 07:53:24 +0000] [1595] [INFO] Using worker: sync
+[2022-05-16 07:53:24 +0000] [1596] [INFO] Booting worker with pid: 1596
+[2022-05-16 08:22:19 +0000] [1595] [CRITICAL] WORKER TIMEOUT (pid:1596)
+[2022-05-16 17:22:19 +0900] [1596] [INFO] Worker exiting (pid: 1596)
+[2022-05-16 08:22:19 +0000] [1635] [INFO] Booting worker with pid: 1635
+[2022-05-16 08:23:55 +0000] [1595] [CRITICAL] WORKER TIMEOUT (pid:1635)
+[2022-05-16 17:23:55 +0900] [1635] [INFO] Worker exiting (pid: 1635)
+[2022-05-16 08:23:55 +0000] [1639] [INFO] Booting worker with pid: 1639
+[2022-05-16 08:29:50 +0000] [1595] [CRITICAL] WORKER TIMEOUT (pid:1639)
+[2022-05-16 17:29:50 +0900] [1639] [INFO] Worker exiting (pid: 1639)
+[2022-05-16 08:29:50 +0000] [1647] [INFO] Booting worker with pid: 1647
+[2022-05-16 08:29:56 +0000] [1595] [INFO] Handling signal: term
+[2022-05-16 17:29:56 +0900] [1647] [INFO] Worker exiting (pid: 1647)
+[2022-05-16 08:29:56 +0000] [1595] [INFO] Shutting down: Master
+[2022-05-16 08:31:06 +0000] [1657] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 08:31:06 +0000] [1657] [INFO] Listening at: http://0.0.0.0:8000 (1657)
+[2022-05-16 08:31:06 +0000] [1657] [INFO] Using worker: sync
+[2022-05-16 08:31:06 +0000] [1658] [INFO] Booting worker with pid: 1658
+[2022-05-16 08:32:06 +0000] [1657] [INFO] Handling signal: term
+[2022-05-16 17:32:06 +0900] [1658] [INFO] Worker exiting (pid: 1658)
+[2022-05-16 08:32:06 +0000] [1657] [INFO] Shutting down: Master
+[2022-05-16 08:33:07 +0000] [1676] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 08:33:07 +0000] [1676] [INFO] Listening at: http://0.0.0.0:8000 (1676)
+[2022-05-16 08:33:07 +0000] [1676] [INFO] Using worker: sync
+[2022-05-16 08:33:07 +0000] [1677] [INFO] Booting worker with pid: 1677
+Method Not Allowed: /users/phone-register/
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+[2022-05-16 08:34:05 +0000] [1676] [CRITICAL] WORKER TIMEOUT (pid:1677)
+[2022-05-16 17:34:05 +0900] [1677] [INFO] Worker exiting (pid: 1677)
+[2022-05-16 08:34:05 +0000] [1685] [INFO] Booting worker with pid: 1685
+Not Found: /static/rest_framework/css/prettify.css
+Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+Not Found: /static/rest_framework/css/bootstrap.min.css
+Not Found: /static/rest_framework/js/jquery-3.5.1.min.js
+Not Found: /static/rest_framework/js/ajax-form.js
+Not Found: /static/rest_framework/css/default.css
+Not Found: /static/rest_framework/js/csrf.js
+Not Found: /static/rest_framework/js/bootstrap.min.js
+Not Found: /static/rest_framework/js/prettify-min.js
+Not Found: /static/rest_framework/js/default.js
+[2022-05-16 09:12:22 +0000] [1676] [INFO] Handling signal: term
+[2022-05-16 18:12:22 +0900] [1685] [INFO] Worker exiting (pid: 1685)
+[2022-05-16 09:12:22 +0000] [1676] [INFO] Shutting down: Master
+[2022-05-16 09:12:47 +0000] [1907] [INFO] Starting gunicorn 20.1.0
+[2022-05-16 09:12:47 +0000] [1907] [INFO] Listening at: http://0.0.0.0:8000 (1907)
+[2022-05-16 09:12:47 +0000] [1907] [INFO] Using worker: sync
+[2022-05-16 09:12:47 +0000] [1910] [INFO] Booting worker with pid: 1910
+[2022-05-16 10:04:32 +0000] [1907] [CRITICAL] WORKER TIMEOUT (pid:1910)
+[2022-05-16 19:04:32 +0900] [1910] [INFO] Worker exiting (pid: 1910)
+[2022-05-16 10:04:32 +0000] [2203] [INFO] Booting worker with pid: 2203
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+[2022-05-16 11:24:39 +0000] [1907] [WARNING] Worker with pid 2203 was terminated due to signal 1
+[2022-05-16 11:24:39 +0000] [2317] [INFO] Booting worker with pid: 2317
+[2022-05-16 11:24:39 +0000] [1907] [INFO] Handling signal: hup
+[2022-05-16 11:24:39 +0000] [1907] [INFO] Hang up: Master
+[2022-05-16 11:24:39 +0000] [2318] [INFO] Booting worker with pid: 2318
+[2022-05-16 20:24:40 +0900] [2317] [INFO] Worker exiting (pid: 2317)
+Method Not Allowed (GET): /
+Method Not Allowed: /
+[2022-05-16 14:55:41 +0000] [1907] [CRITICAL] WORKER TIMEOUT (pid:2318)
+[2022-05-16 23:55:41 +0900] [2318] [INFO] Worker exiting (pid: 2318)
+[2022-05-16 14:55:42 +0000] [2609] [INFO] Booting worker with pid: 2609
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Method Not Allowed (GET): /
+Method Not Allowed: /
+Not Found: /*
+Method Not Allowed (GET): /
+Method Not Allowed: /
+[2022-05-17 02:57:26 +0000] [1907] [INFO] Handling signal: term
+[2022-05-17 11:57:26 +0900] [2609] [INFO] Worker exiting (pid: 2609)
+[2022-05-17 02:57:26 +0000] [1907] [INFO] Shutting down: Master
+[2022-05-17 02:58:04 +0000] [4798] [INFO] Starting gunicorn 20.1.0
+[2022-05-17 02:58:04 +0000] [4798] [INFO] Listening at: http://0.0.0.0:8000 (4798)
+[2022-05-17 02:58:04 +0000] [4798] [INFO] Using worker: sync
+[2022-05-17 02:58:04 +0000] [4799] [INFO] Booting worker with pid: 4799
+Not Found: /
+Not Found: /
+[2022-05-17 05:09:33 +0000] [4798] [WARNING] Worker with pid 4799 was terminated due to signal 1
+[2022-05-17 05:09:33 +0000] [5121] [INFO] Booting worker with pid: 5121
+[2022-05-17 05:09:33 +0000] [4798] [INFO] Handling signal: hup
+[2022-05-17 05:09:33 +0000] [4798] [INFO] Hang up: Master
+[2022-05-17 05:09:33 +0000] [5122] [INFO] Booting worker with pid: 5122
+[2022-05-17 14:09:33 +0900] [5121] [INFO] Worker exiting (pid: 5121)
+Not Found: /favicon.ico
+[2022-05-17 06:13:13 +0000] [4798] [CRITICAL] WORKER TIMEOUT (pid:5122)
+[2022-05-17 15:13:13 +0900] [5122] [INFO] Worker exiting (pid: 5122)
+[2022-05-17 06:13:13 +0000] [5325] [INFO] Booting worker with pid: 5325
+[2022-05-17 06:14:00 +0000] [4798] [CRITICAL] WORKER TIMEOUT (pid:5325)
+[2022-05-17 15:14:00 +0900] [5325] [INFO] Worker exiting (pid: 5325)
+[2022-05-17 06:14:00 +0000] [5327] [INFO] Booting worker with pid: 5327
+[2022-05-17 06:15:18 +0000] [4798] [CRITICAL] WORKER TIMEOUT (pid:5327)
+[2022-05-17 15:15:18 +0900] [5327] [INFO] Worker exiting (pid: 5327)
+[2022-05-17 06:15:18 +0000] [5329] [INFO] Booting worker with pid: 5329
+Not Found: /favicon.ico
+[2022-05-17 15:23:27 +0900] [5329] [INFO] Worker exiting (pid: 5329)
+[2022-05-17 06:23:27 +0000] [5354] [INFO] Booting worker with pid: 5354
+[2022-05-17 06:23:33 +0000] [5355] [INFO] Starting gunicorn 20.1.0
+[2022-05-17 06:23:33 +0000] [5355] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2022-05-17 06:23:33 +0000] [5355] [ERROR] Retrying in 1 second.
+[2022-05-17 06:23:34 +0000] [5355] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2022-05-17 06:23:34 +0000] [5355] [ERROR] Retrying in 1 second.
+[2022-05-17 06:23:35 +0000] [5355] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2022-05-17 06:23:35 +0000] [5355] [ERROR] Retrying in 1 second.
+[2022-05-17 06:23:36 +0000] [5355] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2022-05-17 06:23:36 +0000] [5355] [ERROR] Retrying in 1 second.
+[2022-05-17 06:23:37 +0000] [5355] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2022-05-17 06:23:37 +0000] [5355] [ERROR] Retrying in 1 second.
+[2022-05-17 06:23:38 +0000] [5355] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2022-05-17 07:17:45 +0000] [4798] [CRITICAL] WORKER TIMEOUT (pid:5354)
+[2022-05-17 16:17:45 +0900] [5354] [INFO] Worker exiting (pid: 5354)
+[2022-05-17 07:17:45 +0000] [5856] [INFO] Booting worker with pid: 5856
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fe84c37bca0>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-d02800ab2bc718e95dad76594405a8d26868487c.sendbird.com', port=443): Max retries exceeded with url: /v3/users (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe84c37bca0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/users/views.py", line 52, in post
+    SendbirdAPI().create_sendbird_user(user_id=info["sendbird_id"], nickname=info["kakao_nickname"])
+  File "/home/ubuntu/Server_main/sendbird/views.py", line 106, in create_sendbird_user
+    return requests.post(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api-d02800ab2bc718e95dad76594405a8d26868487c.sendbird.com', port=443): Max retries exceeded with url: /v3/users (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe84c37bca0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fe84c350d60>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-d02800ab2bc718e95dad76594405a8d26868487c.sendbird.com', port=443): Max retries exceeded with url: /v3/users (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe84c350d60>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/users/views.py", line 52, in post
+    SendbirdAPI().create_sendbird_user(user_id=info["sendbird_id"], nickname=info["kakao_nickname"])
+  File "/home/ubuntu/Server_main/sendbird/views.py", line 106, in create_sendbird_user
+    return requests.post(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api-d02800ab2bc718e95dad76594405a8d26868487c.sendbird.com', port=443): Max retries exceeded with url: /v3/users (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe84c350d60>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+Bad Request: /users/register/
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fe84c2de520>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-d02800ab2bc718e95dad76594405a8d26868487c.sendbird.com', port=443): Max retries exceeded with url: /v3/users (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe84c2de520>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/users/views.py", line 52, in post
+    SendbirdAPI().create_sendbird_user(user_id=info["sendbird_id"], nickname=info["kakao_nickname"])
+  File "/home/ubuntu/Server_main/sendbird/views.py", line 106, in create_sendbird_user
+    return requests.post(
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api-d02800ab2bc718e95dad76594405a8d26868487c.sendbird.com', port=443): Max retries exceeded with url: /v3/users (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe84c2de520>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+Bad Request: /payment/pay
+Internal Server Error: /payment/pay
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/utils/login_decorator.py", line 15, in wrapper
+    return func(self, request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 37, in post
+    product = Product.objects.get(name = data['product_name'])
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+products.models.Product.DoesNotExist: Product matching query does not exist.
+Bad Request: /pairs/match
+Internal Server Error: /payment/pay
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/utils/login_decorator.py", line 15, in wrapper
+    return func(self, request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 38, in post
+    coupon = Coupon.objects.get(name = data['coupon_name'])
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+payments.models.Coupon.DoesNotExist: Coupon matching query does not exist.
+Internal Server Error: /payment/pay
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/utils/login_decorator.py", line 15, in wrapper
+    return func(self, request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 38, in post
+    coupon = Coupon.objects.get(name = data['coupon_name'])
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+payments.models.Coupon.DoesNotExist: Coupon matching query does not exist.
+Internal Server Error: /payment/pay
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/utils/login_decorator.py", line 15, in wrapper
+    return func(self, request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 38, in post
+    coupon = Coupon.objects.get(name = data['coupon_name'])
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+payments.models.Coupon.DoesNotExist: Coupon matching query does not exist.
+Not Found: /favicon.ico
+[2022-05-17 07:49:41 +0000] [4798] [CRITICAL] WORKER TIMEOUT (pid:5856)
+[2022-05-17 16:49:41 +0900] [5856] [INFO] Worker exiting (pid: 5856)
+[2022-05-17 07:49:41 +0000] [5923] [INFO] Booting worker with pid: 5923
+[2022-05-17 18:10:34 +0900] [5923] [INFO] Worker exiting (pid: 5923)
+[2022-05-17 09:10:34 +0000] [6218] [INFO] Booting worker with pid: 6218
+[2022-05-17 18:10:44 +0900] [6218] [INFO] Worker exiting (pid: 6218)
+[2022-05-17 09:10:44 +0000] [6222] [INFO] Booting worker with pid: 6222
+[2022-05-17 09:11:02 +0000] [4798] [INFO] Handling signal: term
+[2022-05-17 18:11:02 +0900] [6222] [INFO] Worker exiting (pid: 6222)
+[2022-05-17 09:11:02 +0000] [4798] [INFO] Shutting down: Master
+[2022-05-17 09:11:24 +0000] [6230] [INFO] Starting gunicorn 20.1.0
+[2022-05-17 09:11:24 +0000] [6230] [INFO] Listening at: http://0.0.0.0:8000 (6230)
+[2022-05-17 09:11:24 +0000] [6230] [INFO] Using worker: sync
+[2022-05-17 09:11:24 +0000] [6231] [INFO] Booting worker with pid: 6231
+Not Found: /
+Not Found: /favicon.ico
+[2022-05-17 09:23:24 +0000] [6230] [CRITICAL] WORKER TIMEOUT (pid:6231)
+[2022-05-17 18:23:24 +0900] [6231] [INFO] Worker exiting (pid: 6231)
+[2022-05-17 09:23:24 +0000] [6252] [INFO] Booting worker with pid: 6252
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /admin
+[2022-05-17 09:27:33 +0000] [6230] [CRITICAL] WORKER TIMEOUT (pid:6252)
+[2022-05-17 18:27:33 +0900] [6252] [INFO] Worker exiting (pid: 6252)
+[2022-05-17 09:27:33 +0000] [6257] [INFO] Booting worker with pid: 6257
+Not Found: /payment
+Method Not Allowed (GET): /payment/callback
+Method Not Allowed: /payment/callback
+[2022-05-17 09:33:26 +0000] [6230] [CRITICAL] WORKER TIMEOUT (pid:6257)
+[2022-05-17 18:33:26 +0900] [6257] [INFO] Worker exiting (pid: 6257)
+[2022-05-17 09:33:26 +0000] [6264] [INFO] Booting worker with pid: 6264
+Internal Server Error: /payment/callback
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 116, in post
+    user = User.objects.get(Q(name = check_result['response']['buyer_name']) | Q(kakao_nickname = check_result['response']['buyer_name']))
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+Internal Server Error: /payment/callback
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 116, in post
+    user = User.objects.get(Q(name = check_result['response']['buyer_name']) | Q(kakao_nickname = check_result['response']['buyer_name']))
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+Internal Server Error: /payment/callback
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Server_main/payments/views.py", line 116, in post
+    user = User.objects.get(Q(name = check_result['response']['buyer_name']) | Q(kakao_nickname = check_result['response']['buyer_name']))
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/sinor/lib/python3.9/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+users.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 3!
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+[2022-05-17 11:22:50 +0000] [6230] [WARNING] Worker with pid 6264 was terminated due to signal 1
+[2022-05-17 11:22:50 +0000] [6419] [INFO] Booting worker with pid: 6419
+[2022-05-17 11:22:50 +0000] [6230] [INFO] Handling signal: hup
+[2022-05-17 11:22:50 +0000] [6230] [INFO] Hang up: Master
+[2022-05-17 11:22:50 +0000] [6420] [INFO] Booting worker with pid: 6420
+[2022-05-17 20:22:50 +0900] [6419] [INFO] Worker exiting (pid: 6419)
+Not Found: /
+Not Found: /
+Not Found: /*
+Not Found: /
+Not Found: /
+Not Found: /*
+Not Found: /
