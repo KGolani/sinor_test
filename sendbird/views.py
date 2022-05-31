@@ -222,3 +222,4 @@ class SendbirdReportView(APIView): # 일부러 신고내기위한 용도
         )
 
         return JsonResponse({"message": "report"}, status=200)
+        
